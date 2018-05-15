@@ -49,10 +49,23 @@ a=sub(2,3)+sub(4,3);
 
 //問4　入力した値が図の中であればOK
 //	   そうでなければNOと出力しなさい。
+#include <stdio.h>
+#include <conio.h>
 
-int sub(int x)
+int sub(int x,int y)
 {
-	int a = 0;
+	if (x == 0 && y == 0)
+	{
+		printf("OK\n");
+	}
+	else if (x == 800 || y == 600 && y == 600 && x == 800)
+	{
+		printf("OK\n");
+	}
+	else
+	{
+		printf("NO\n");
+	}
 }
 
 int main(void)
